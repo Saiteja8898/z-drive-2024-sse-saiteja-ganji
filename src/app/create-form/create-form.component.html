@@ -8,23 +8,27 @@
     </div>
     <div>
 
-        <form class="event-form" >
+        <form class="event-form" #heroForm="ngForm">
+            <label class="field">
+                userid
+                <input type="text" class="input-field" name="user" [(ngModel)]="userid">
+            </label>
             <label class="field">
                 Event Name
-                <input type="text" class="input-field" [(ngModel)]="eventName">
+                <input type="text" class="input-field"  name="eventname" [(ngModel)]="eventName">
             </label>
             <label class="field">
                 Event Description
-                <input type="text" class="input-field" [(ngModel)]="eventDescription">
+                <input type="text" class="input-field"  name="dasc" [(ngModel)]="eventDescription">
             </label>
-            <!-- <label>
+            <label class="field">
                 Start time
-                <input type="text" class="input-field" [(ngModel)]="startTime">
+                <input type="number" class="input-field"  name="start" [(ngModel)]="startTime">
             </label>
-            <label>
+            <label class="field">
                 End time
-                <input type="text" class="input-field" [(ngModel)]="endTime">
-            </label> -->
+                <input type="number" class="input-field"  name="end" [(ngModel)]="endTime">
+            </label>
         </form>
     </div>
 

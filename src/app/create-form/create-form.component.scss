@@ -6,6 +6,10 @@
     background-color: gray;
     top: 0;
     left: 0;
+    overflow: scroll;
+}
+.close-btn {
+    cursor: pointer;
 }
 .form-container {
     min-height: 300px;
@@ -49,4 +53,5 @@
     color: white;
     margin-top: 20px;
     background-color: pink;
+    cursor: pointer;
 }

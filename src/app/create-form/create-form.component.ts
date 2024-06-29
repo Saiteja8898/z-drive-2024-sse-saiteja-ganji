@@ -10,12 +10,14 @@ export class CreateFormComponent {
   title = 'Create';
   @Input() eventName = 'Sample Event';
   @Input() eventDescription = ' sample desc';
-
+  @Input() userid = ' sample user';
+  @Input() startTime: number = 0;
+  @Input() endTime: number = 0;
   @Output() saveForm =  new EventEmitter()
   @Output() closeForm =  new EventEmitter()
 
   onSubmit() {
-    this.saveForm.emit({name: this.eventName, desc: this.eventDescription})
+    this.saveForm.emit({name: this.eventName, desc: this.eventDescription, user: this.userid, start: this.startTime, end: this.endTime, currentTime: new Date()})
   }
 
 }

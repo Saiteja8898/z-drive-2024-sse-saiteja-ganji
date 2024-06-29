@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { FormsModule } from '@angular/forms';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
-    
+    NgxDatatableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

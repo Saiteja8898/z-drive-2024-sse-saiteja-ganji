@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CalendarComponent {
 
+  timings = [1-2, 2-3, 3-4];
+  users = ["sai"]
+
 }

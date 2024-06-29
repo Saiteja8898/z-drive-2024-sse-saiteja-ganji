@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'calendar-invites';
 
+  events: any[] = [];
   showForm = false;
 
   showCreateForm() {
@@ -15,7 +16,11 @@ export class AppComponent {
   }
 
   onSave(data: any) {
-    console.log(data)
+    console.log(data);
+    this.events.push(data);
+    
+    this.showForm = false;
+    
   }
 
   onCloseForm() {
