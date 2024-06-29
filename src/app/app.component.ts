@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calendar-invites';
+
+  showForm = false;
+
+  showCreateForm() {
+    this.showForm = true;
+  }
+
+  onSave(data: any) {
+    console.log(data)
+  }
+
+  onCloseForm() {
+    this.showForm = false;
+  }
 }
